@@ -1,0 +1,48 @@
+#include<stdio.h>
+int main()
+{
+    int n,a[105],i,j,t;
+    while(scanf("%d",&n)==1)
+    {
+        printf("Lumberjacks:\n");
+        while(n--)
+        {
+            t=0;
+            for(i=0;i<10;i++)
+            {
+                scanf("%d",&a[i]);
+            }
+            if(a[0]>a[1])
+            {
+                for(j=1;j<9;j++)
+                {
+                    if(a[j]<a[j+1])
+                    {
+                        t=1;
+                        break;
+                    }
+                }
+            }
+            if(a[0]<a[1])
+            {
+                for(j=1;j<9;j++)
+                {
+                    if(a[j]>a[j+1])
+                    {
+                        t=1;
+                        break;
+                    }
+                }
+            }
+            if(t==1)
+            {
+                printf("Unordered\n");
+            }
+            if(t==0)
+            {
+                printf("Ordered\n");
+            }
+        }
+    }
+    return 0;
+}
