@@ -1,15 +1,13 @@
 public class PartitionList86 {
 	public static ListNode partition(ListNode head, int x) {
 
-		
-		ListNode temp = head;	
-		
+		ListNode temp = head;
+
 		ListNode dummy = new ListNode(0);
 		ListNode lessThanX = dummy;
-		
+
 		ListNode dummy1 = new ListNode(0);
-		ListNode rest = dummy1;		
-		
+		ListNode rest = dummy1;
 
 		while (temp != null) {
 
@@ -22,7 +20,6 @@ public class PartitionList86 {
 				lessThanX = lessThanX.next;
 
 			}
-
 			temp = temp.next;
 		}
 		lessThanX.next = dummy1.next;
