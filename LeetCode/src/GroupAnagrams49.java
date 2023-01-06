@@ -37,7 +37,7 @@ public class GroupAnagrams49 {
 		return true;
 	}
 	public static void main(String[] args) {
-		String arr[]= {"eat","tea","tan","ate","nat","bat"};
+		String arr[]= {"eat","tea","tan","ate","nat","cat"};
 		groupAnagrams(arr);
 		
 	}
