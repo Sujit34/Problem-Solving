@@ -1,10 +1,11 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class PascalsTriangle118 {
-	public static List<List<Integer>> generate(int numRows) {
+public class PascalsTriangleII119 {
+	public static List<Integer> getRow(int rowIndex) {
 		List<List<Integer>> pascalsTriangle = new ArrayList<List<Integer>>();
 
-		for (int i = 0; i < numRows; i++) {
+		for (int i = 0; i <=rowIndex; i++) {
 			List<Integer> row = new ArrayList<Integer>();
 			for (int j = 0; j < i + 1; j++) {
 				if (j == 0 || j == i)
@@ -15,18 +16,14 @@ public class PascalsTriangle118 {
 			}
 			pascalsTriangle.add(row);
 		}
-
-		return pascalsTriangle;
+		return pascalsTriangle.get(rowIndex);
 	}
 
 	public static void main(String[] args) {
-		var result = generate(3);
+		var result = getRow(1);
 		for (int i = 0; i < result.size(); i++) {
-			for (int j = 0; j < result.get(i).size(); j++) {
-				System.out.print(result.get(i).get(j) + " ");
-			}
-			System.out.println();
+			System.out.print(result.get(i) + " ");
 		}
-	}
 
+	}
 }
