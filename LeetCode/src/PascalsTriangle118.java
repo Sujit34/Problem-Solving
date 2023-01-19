@@ -20,7 +20,7 @@ public class PascalsTriangle118 {
 	}
 
 	public static void main(String[] args) {
-		var result = generate(3);
+		var result = generate(4);
 		for (int i = 0; i < result.size(); i++) {
 			for (int j = 0; j < result.get(i).size(); j++) {
 				System.out.print(result.get(i).get(j) + " ");
