@@ -4,11 +4,11 @@ public class CreateTargetArrayintheGivenOrder1389 {
 		int[] result = new int[nums.length];
 
 		for (int i = 0; i < index.length; i++) {
-			
-			for(int j=index.length-2;j>=index[i];j--) {
-				result[j+1] = result[j]; 
+
+			for (int j = index.length - 2; j >= index[i]; j--) {
+				result[j + 1] = result[j];
 			}
-			
+
 			result[index[i]] = nums[i];
 		}
 
