@@ -28,7 +28,7 @@ public class CountItemsMatchingaRule1773 {
 	public static void main(String[] args) {
 		List<List<String>> lists = Arrays.asList(
 				Arrays.asList("phone", "blue", "pixel"),
-				Arrays.asList("computer", "silver", "phone"), 
+				Arrays.asList("computer", "blue", "phone"), 
 				Arrays.asList("phone", "gold", "iphone"));
 		System.out.println(countMatches(lists, "color", "blue"));
 
