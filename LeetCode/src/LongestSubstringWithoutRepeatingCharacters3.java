@@ -16,10 +16,8 @@ public class LongestSubstringWithoutRepeatingCharacters3 {
 
 			}
 			map.put(s.charAt(i), i);
-			if (i == s.length() - 1) {
-				if (maxLength < map.size()) {
-					maxLength = map.size();
-				}
+			if (i == s.length() - 1 && maxLength < map.size()) {
+				maxLength = map.size();
 			}
 		}
 
