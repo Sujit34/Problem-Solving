@@ -1,55 +1,44 @@
-import java.util.*;
 
 public class stringsRearrangement {
+	static boolean success = false; // modified by findSequence
+
 	static boolean solution(String[] inputArray) {
-		LinkedList<String> tries = loadStrings(inputArray);
-		LinkedList<String> matches = new LinkedList<String>();
-		matches.offer(tries.poll());
+		boolean[] used = new boolean[inputArray.length];
+		findSequence(inputArray, null, used, 0);
+		return success;
+	}
 
-		int len = matches.getFirst().length();
-
-		while (!tries.isEmpty()) {
-			int numOfTries = tries.size();
-			String first = matches.getFirst();
-			String last = matches.getLast();
-
-			for (int t = 0; t < numOfTries; t++) {
-				String actual = tries.poll();
-				if (exactOneDiff(first, actual, len)) {
-					matches.offerFirst(actual);
-					break;
-				} else if (exactOneDiff(last, actual, len)) {
-					matches.offerFirst(actual);
-					break;
-				} else {
-					tries.offer(actual);
-				}
+	// recursive backtracking procedure to find admissible
+	// sequence of strings in the array. String prev is the
+	// previous string in the sequence, used[] keeps track
+	// of which strings have been used so far, and n is the
+	// current length of the sequence.
+	static void findSequence(String[] a, String prev, boolean[] used, int n) {
+		if (n == a.length) {
+			success = true;
+			return;
+		}
+		for (int i = 0; i < a.length; i++) {
+			if (!used[i] && (prev == null || differByOne(prev, a[i]))) {
+				used[i] = true;
+				findSequence(a, a[i], used, n + 1);
+				used[i] = false;
 			}
-			if (numOfTries == tries.size())
-				return false;
 		}
-		return true;
 	}
 
-	static boolean exactOneDiff(String target, String actual, int len) {
-		int diff = 0;
-		for (int ch = 0; ch < len; ch++) {
-			if (target.charAt(ch) != actual.charAt(ch))
-				diff++;
+	static boolean differByOne(String a, String b) {
+		int count = 0;
+		for (int i = 0; i < a.length(); i++) {
+			if (a.charAt(i) != b.charAt(i)) {
+				count++;
+			}
 		}
-		return diff == 1;
-	}
-
-	static LinkedList<String> loadStrings(String[] inputArray) {
-		LinkedList<String> temp = new LinkedList<String>();
-		for (String str : inputArray) {
-			temp.offer((str));
-		}
-		return temp;
+		return count == 1;
 	}
 
 	public static void main(String[] args) {
-		String[] inputArray = { "ff", "gf", "af", "ar", "hf" };
+		String[] inputArray = { "aac", "agc", "abc", "afc", "agz", "azc", "zgz", "zga" };
 		System.out.println(solution(inputArray));
 	}
 }
