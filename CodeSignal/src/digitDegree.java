@@ -1,5 +1,6 @@
 
 public class digitDegree {
+	
 	int numberOfTimetoReplace = 0;
 
 	int solution(int n) {
