@@ -11,9 +11,10 @@ public class digitDegree {
 			n = n / 10;
 			count++;
 		}
-
+		
 		if (count == 1)
 			return numberOfTimetoReplace;
+		
 		numberOfTimetoReplace++;
 		return solution(sum);
 
