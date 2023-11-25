@@ -2,6 +2,8 @@ import java.util.*;
 
 public class LongestSubstringWithoutRepeatingCharacters3 {
 	public static int lengthOfLongestSubstring(String s) {
+		
+		/*
 		int maxLength = 0;
 		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
 
@@ -21,6 +23,32 @@ public class LongestSubstringWithoutRepeatingCharacters3 {
 			}
 		}
 
+		return maxLength;
+		
+		*/
+		
+		int maxLength = 0;
+		int start = 0;
+		HashMap<Character, Integer> hashMap = new HashMap<Character, Integer>();
+		int i=start;
+		while(i<s.length()) {
+			if(hashMap.containsKey(s.charAt(i))) {
+				int count = hashMap.size();				
+				if(maxLength<count) {
+					maxLength = count;
+				}
+				hashMap.clear();
+				i= start+1;
+				start++;
+			}
+			else {
+				hashMap.put(s.charAt(i), 1);
+				if(i==s.length()-1 && maxLength<hashMap.size()) {
+					maxLength = hashMap.size();
+				}
+				i++;
+			}
+		}
 		return maxLength;
 	}
 
