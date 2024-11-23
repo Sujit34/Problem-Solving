@@ -14,4 +14,10 @@ public class FirstBadVersion278 {
 		}
 		return low;
 	}
+
+	// This function will be returned by LeetCode.
+	// Just created a dummy function to avoid compile time error.
+	public boolean isBadVersion(int mid){
+		return true;
+	}
 }
