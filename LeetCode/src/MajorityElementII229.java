@@ -1,8 +1,7 @@
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-public class majorityElementII229 {
+public class MajorityElementII229 {
 
     public static List<Integer> majorityElementII(int[] nums) {
 
