@@ -25,6 +25,9 @@ public class majorityElementII229 {
         return list;
         */
 
+        /*
+         * https://www.youtube.com/watch?v=vwZj1K0e9U8&t=881s
+         */
         List<Integer> list = new ArrayList<>();
         int count1 = 0;
         int count2 = 0;
