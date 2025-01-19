@@ -2,6 +2,7 @@ import java.util.*;
 
 public class MajorityElement169 {
 	public static int majorityElement(int[] nums) {
+		/*
 		HashMap<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
 		for (int i = 0; i < nums.length; i++) {
 			if (hashMap.containsKey(nums[i])) {
@@ -23,7 +24,26 @@ public class MajorityElement169 {
 
 		}
 		return key;
+		*/
 
+		/*
+		 * https://www.youtube.com/watch?v=wD7fs5P_MVo
+		 * Moore Voting Algorithm
+		 */
+
+		int candidate = 0;
+		int count =0;
+		for(int num:nums){
+			if(count==0){
+				candidate = num;
+				count++;
+			}
+			else{
+				if(num==candidate)count++;
+				else count--;
+			}
+		}
+		return candidate;
 	}
 
 	public static void main(String[] args) {
