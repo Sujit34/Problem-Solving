@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class RansomNote383 {
     public static void main(String[] args) {
-        System.out.println(canConstruct("bg", "efjbdfbdgfjhhaiigfhbaejahgfbbgbjagbddfgdiaigdadhcfcj"));
+        System.out.println(canConstruct("bg", "bgbg"));
     }
 
     public static boolean canConstruct(String ransomNote, String magazine) {
