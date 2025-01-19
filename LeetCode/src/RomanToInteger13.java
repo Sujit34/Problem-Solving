@@ -1,3 +1,4 @@
+import java.util.HashMap;
 
 public class RomanToInteger13 {
 	public static int romanToInt(String s) {
@@ -51,12 +52,36 @@ public class RomanToInteger13 {
 		}
 
 		return sum;
-
+		
+		/*
+		HashMap<Character, Integer> hashMap = new HashMap<>();
+		
+		hashMap.put('I', 1);
+		hashMap.put('V', 5);
+		hashMap.put('X', 10);
+		hashMap.put('L', 50);
+		hashMap.put('C', 100);
+		hashMap.put('D', 500);
+		hashMap.put('M', 1000);
+		
+		int sum = 0;
+		int preValue = hashMap.get(s.charAt(0));
+		
+		for(int i=1;i<s.length();i++) {
+			int currentValue = hashMap.get(s.charAt(i));
+			if(currentValue>preValue)sum-=preValue;
+			else sum+=preValue;
+			preValue = currentValue;
+		}
+		sum+=preValue;	     
+		return sum;
+		*/
 	}
 
 	public static void main(String[] args) {
 
 		System.out.println(romanToInt("MCMXCIV"));
+		System.out.println(romanToInt("MCMXCIVII"));
 
 	}
 
