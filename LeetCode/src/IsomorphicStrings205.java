@@ -23,6 +23,22 @@ public class IsomorphicStrings205 {
 			}
 		}
 		return true;
+
+		/*
+			HashMap<Character,Character> hashMap = new HashMap<>();
+			for(int i=0;i<s.length();i++){
+				if(!hashMap.containsKey(s.charAt(i))){
+					if(!hashMap.containsValue(t.charAt(i))){
+						hashMap.put(s.charAt(i),t.charAt(i));
+					}
+					else return false;
+				}
+				else{
+					if(hashMap.get(s.charAt(i))!=t.charAt(i))return false;
+				}
+			}
+			return true;
+		 */
 	}
 
 	public static void main(String[] args) {

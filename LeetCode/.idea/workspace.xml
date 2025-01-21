@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="639ebaee-7d76-4287-8da7-82f58836a85c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RansomNote383.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RansomNote383.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IsomorphicStrings205.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsomorphicStrings205.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,24 +31,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AddBinary67.executor": "Run",
-    "Application.RansomNote383.executor": "Run",
-    "Application.majorityElementII229.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Resource/C Drive/Coding/Problem-Solving/LeetCode",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AddBinary67.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RansomNote383.executor&quot;: &quot;Run&quot;,
+    &quot;Application.majorityElementII229.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Resource/C Drive/Coding/PracticeCoding&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -67,7 +67,9 @@
       <workItem from="1732405771133" duration="46000" />
       <workItem from="1735780212010" duration="624000" />
       <workItem from="1736014894494" duration="9915000" />
-      <workItem from="1737234223873" duration="8636000" />
+      <workItem from="1737234223873" duration="9233000" />
+      <workItem from="1737310369782" duration="1819000" />
+      <workItem from="1737397754903" duration="1309000" />
     </task>
     <servers />
   </component>
