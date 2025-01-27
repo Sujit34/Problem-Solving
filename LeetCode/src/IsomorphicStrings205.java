@@ -35,7 +35,7 @@ public class IsomorphicStrings205 {
 				}
 				else{
 					if(hashMap.get(s.charAt(i))!=t.charAt(i))return false;
-				}
+				}s.l
 			}
 			return true;
 		 */
